@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_width="426dp"
+        android:layout_height="583dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="395dp"
+            android:layout_height="55dp"
+            android:hint="Title"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_description"
+            style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+            android:layout_width="404dp"
+            android:layout_height="371dp"
+            android:hint="Description"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:visibility="visible" />
+
+        <!-- Breed field -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitNote"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Submit"
+        tools:text="Submit" />
+
+</LinearLayout>
